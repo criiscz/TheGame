@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_01_-_Intro(chosic.com).mp3-f404dd0de24fd53ff8fd9397a3c7a2c1.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/Komiku_-_01_-_Intro(chosic.com).mp3"
+dest_files=[ "res://.import/Komiku_-_01_-_Intro(chosic.com).mp3-f404dd0de24fd53ff8fd9397a3c7a2c1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

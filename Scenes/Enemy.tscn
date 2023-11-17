@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Assets/enemigos/explosion.png" type="Texture" id=1]
+[ext_resource path="res://Assets-TG/Assets/enemigos/explosion.png" type="Texture" id=1]
 [ext_resource path="res://Sounds/sfx/enemigo_destruido.ogg" type="AudioStream" id=2]
 [ext_resource path="res://MyAssets/naves_enemigos/ShipBOMBASTIC.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Enemy/Enemy.gd" type="Script" id=4]

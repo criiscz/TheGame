@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_10_-_Level_3__Run_on_the_expressway(chosic.com).mp3-981f5b14bc323c49c74c79e48f9b6374.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/Komiku_-_10_-_Level_3__Run_on_the_expressway(chosic.com).mp3"
+dest_files=[ "res://.import/Komiku_-_10_-_Level_3__Run_on_the_expressway(chosic.com).mp3-981f5b14bc323c49c74c79e48f9b6374.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

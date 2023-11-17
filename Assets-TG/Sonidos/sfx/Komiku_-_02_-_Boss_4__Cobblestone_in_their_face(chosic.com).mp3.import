@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_02_-_Boss_4__Cobblestone_in_their_face(chosic.com).mp3-fe9bd895a35cbb40f8db4478fd60fb0b.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/Komiku_-_02_-_Boss_4__Cobblestone_in_their_face(chosic.com).mp3"
+dest_files=[ "res://.import/Komiku_-_02_-_Boss_4__Cobblestone_in_their_face(chosic.com).mp3-fe9bd895a35cbb40f8db4478fd60fb0b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

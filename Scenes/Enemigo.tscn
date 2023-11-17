@@ -1,90 +1,58 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=23 format=2]
 
-[ext_resource path="res://MyAssets/naves_enemigos/ShipBOMBASTIC.png" type="Texture" id=1]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_1.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Enemigo.gd" type="Script" id=2]
-[ext_resource path="res://Assets/enemigos/explosion.png" type="Texture" id=3]
-[ext_resource path="res://Sounds/sfx/enemigo_destruido.ogg" type="AudioStream" id=4]
-
-[sub_resource type="AtlasTexture" id=9]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=10]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 200, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=11]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 400, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=12]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 600, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=13]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 800, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=14]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 1000, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=15]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 1200, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=16]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 1400, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=17]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 1600, 0, 200, 170 )
-
-[sub_resource type="AtlasTexture" id=18]
-flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 1800, 0, 200, 170 )
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_5.png" type="Texture" id=3]
+[ext_resource path="res://Assets-TG/Sonidos/sfx/geometry-dash-death-sound.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_0.png" type="Texture" id=5]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_2.png" type="Texture" id=6]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_6.png" type="Texture" id=7]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_4.png" type="Texture" id=8]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_3.png" type="Texture" id=9]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_3.png" type="Texture" id=10]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/walk_7.png" type="Texture" id=11]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_6.png" type="Texture" id=12]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_9.png" type="Texture" id=13]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_5.png" type="Texture" id=14]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_7.png" type="Texture" id=15]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_2.png" type="Texture" id=16]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_1.png" type="Texture" id=17]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_4.png" type="Texture" id=18]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_0.png" type="Texture" id=19]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 1/death_8.png" type="Texture" id=20]
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 20.0
+"speed": 15.0
 }, {
-"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "explosion",
 "speed": 15.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=8]
-radius = 38.326
-height = 55.143
+radius = 57.0185
+height = 0.0
 
 [node name="Enemigo" type="Area2D" groups=["enemigo"]]
 position = Vector2( 0.00012207, 0 )
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -1.00012, 2.5 )
-scale = Vector2( 1.67188, 1.58594 )
+position = Vector2( -1.00013, -63 )
+scale = Vector2( 0.173831, 0.164895 )
 frames = SubResource( 7 )
 animation = "Idle"
+frame = 5
 playing = true
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.19209e-07, 6 )
+position = Vector2( 0.99988, 0 )
 rotation = 1.55985
 shape = SubResource( 8 )
 

@@ -41,6 +41,7 @@ func disparar():
 		$Timer.start()
 		$AudioStreamPlayer.play()
 		var instancia_disparo 
+		var angulo_disparo = get_angle_to(get_global_mouse_position())
 		if powerup:
 			if isTripleShoot:
 				instancia_disparo = DisparoEspecial.instance()
@@ -49,6 +50,8 @@ func disparar():
 		else:
 			instancia_disparo = Disparo.instance()
 		instancia_disparo.global_position = $DisparoPos.global_position
+		instancia_disparo.rotation = angulo_disparo
+		instancia_disparo.apply_impulse(Vector2(), (get_global_mouse_position() - $DisparoPos.global_position) * 10)
 		add_child(instancia_disparo)
 		instancia_disparo.set_as_toplevel(true)
 
@@ -62,7 +65,17 @@ func _physics_process(_delta):
 		
 
 func _process(delta):
-	pass
+	var mouse_pos = get_global_mouse_position()
+	if get_angle_to(mouse_pos) > 1.8 or get_angle_to(mouse_pos) < -1.8:
+		$PlayerAnimated.flip_h = true
+		$DisparoPos.position.x = -74
+		$Weapon.flip_h = true
+		$Weapon.position.x = 15
+	else:
+		$PlayerAnimated.flip_h = false
+		$DisparoPos.position.x = 74
+		$Weapon.flip_h = false
+		$Weapon.position.x = 24
 		
 func take_damage():
 	Global.remove_vida()

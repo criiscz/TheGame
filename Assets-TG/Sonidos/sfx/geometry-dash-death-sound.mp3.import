@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/geometry-dash-death-sound.mp3-3c7496d1bf206c7ac8d593880c50286f.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/geometry-dash-death-sound.mp3"
+dest_files=[ "res://.import/geometry-dash-death-sound.mp3-3c7496d1bf206c7ac8d593880c50286f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

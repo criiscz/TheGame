@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mission_complete.mp3-47d430d2099e2672127086ecafdd82b1.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/Mission_complete.mp3"
+dest_files=[ "res://.import/Mission_complete.mp3-47d430d2099e2672127086ecafdd82b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

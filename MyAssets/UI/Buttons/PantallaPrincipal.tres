@@ -1,9 +1,9 @@
 [gd_resource type="Theme" load_steps=3 format=2]
 
 [sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.862745, 0.227451, 0.427451, 1 )
+bg_color = Color( 0.824219, 0.344239, 0.231812, 1 )
 border_width_bottom = 20
-border_color = Color( 0.717647, 0.192157, 0.356863, 1 )
+border_color = Color( 0.714844, 0.277995, 0.178711, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -12,9 +12,9 @@ shadow_size = 10
 shadow_offset = Vector2( 2, 5 )
 
 [sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.0862745, 0.427451, 0.831373, 1 )
+bg_color = Color( 0.831373, 0.662745, 0.0862745, 1 )
 border_width_bottom = 20
-border_color = Color( 0.0705882, 0.356863, 0.698039, 1 )
+border_color = Color( 0.65625, 0.522814, 0.0666504, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10

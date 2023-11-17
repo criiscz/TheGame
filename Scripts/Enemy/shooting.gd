@@ -7,6 +7,11 @@ var hp = 70
 
 onready var ray_cast = $RayCast2D
 
+var velocidad = 100
+
+var n_rotation = 0
+
+
 var player_g_position = Vector2()
 onready var player : PLAYER
 
@@ -40,13 +45,15 @@ func _process(delta):
 	$Position2D.set_global_position(global_position)
 	
 	if player_g_position.x < global_position.x:
-		$Sprites/Sprite.scale.y = 1
+		$AnimatedSprite.flip_h = true
 	else: 
-		$Sprites/Sprite.scale.y = -1
+		$AnimatedSprite.flip_h = false
 	_look_for_player()
 	if global_position.distance_to(player_g_position) <= 1920 and hp > 0:
 		$Position2D.look_at(player_g_position)
-		global_rotation = lerp_angle(global_rotation, $Position2D.global_rotation, 2*delta)
+		$RayCast2D.rotation = lerp_angle($Position2D.global_rotation, global_rotation, delta)
+		global_position = global_position.move_toward(player_g_position ,velocidad*delta)
+		#$Position2D.set_global_position(global_position)
 	
 	if hp <= 0:
 		$Timer.stop()
@@ -87,7 +94,7 @@ func shoot():
 	var new_bullet = bullet.instance()
 	new_bullet.z_index = 1
 	get_parent().add_child_below_node(self, new_bullet)
-	new_bullet.global_rotation_degrees = global_rotation_degrees
+	new_bullet.global_rotation_degrees = $RayCast2D.rotation_degrees
 	new_bullet.global_position = $Sprites/Sprite/bullets_out.global_position
 	$shoot_sound.play()
 
@@ -95,8 +102,8 @@ func _on_Timer_timeout():
 	if ray_cast.is_colliding():
 		if ray_cast.get_collider() is PLAYER:
 			shoot()
-#	$Timer.wait_time = (rand_range(0.1, 0.5))
-	$Timer.wait_time = (0.1)
+	#$Timer.wait_time = (rand_range(0.1, 1))
+	$Timer.wait_time = (0.2)
 	randomize()
 
 

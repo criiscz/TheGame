@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sb_indreams(chosic.com).mp3-714d850d838ef32b730ee6b4d24acb22.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/sb_indreams(chosic.com).mp3"
+dest_files=[ "res://.import/sb_indreams(chosic.com).mp3-714d850d838ef32b730ee6b4d24acb22.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

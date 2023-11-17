@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_07_-_Battle_of_Pogs(chosic.com).mp3-822a5c19cd68f3a9c73d2e9298bad0d6.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/Komiku_-_07_-_Battle_of_Pogs(chosic.com).mp3"
+dest_files=[ "res://.import/Komiku_-_07_-_Battle_of_Pogs(chosic.com).mp3-822a5c19cd68f3a9c73d2e9298bad0d6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -26,7 +26,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Galatic Escape"
+config/name="TheGame"
 run/main_scene="res://Scenes/PantallaPrincipal.tscn"
 config/icon="res://Galactic.ico"
 

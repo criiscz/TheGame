@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 var velocidad_inicial = 100  # La velocidad inicial del disparo
-var angulo_disparo = 60  # El ángulo del disparo en grados
+var angulo_disparo = -50  # El ángulo del disparo en grados
 var gravedad = 500# Magnitud de la fuerza de gravedad
 var velocidad = Vector2.ZERO
 

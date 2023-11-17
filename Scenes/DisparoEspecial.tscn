@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/Disparo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/DisparoEspecial.gd" type="Script" id=2]
 
-[node name="DisparoEspecial" type="Node2D"]
+[node name="DisparoEspecial" type="RigidBody2D"]
 script = ExtResource( 2 )
 
 [node name="Disparo" parent="." instance=ExtResource( 1 )]

@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Assets/enemigos/explosion.png" type="Texture" id=1]
-[ext_resource path="res://Assets/enemigos/enemigo2.png" type="Texture" id=2]
+[ext_resource path="res://Assets-TG/Assets/enemigos/explosion.png" type="Texture" id=1]
+[ext_resource path="res://Assets-TG/Assets/enemigos/enemigo2.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Enemy/shooting.gd" type="Script" id=3]
 [ext_resource path="res://MyAssets/naves_enemigos/nave_boss.png" type="Texture" id=4]
-[ext_resource path="res://MyAssets/Sonidos/laser-3.mp3" type="AudioStream" id=5]
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 21.0002
-height = 51.9998
+[ext_resource path="res://Assets-TG/Sonidos/sfx/short-fireball-woosh-6146.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_5.png" type="Texture" id=6]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_0.png" type="Texture" id=7]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_2.png" type="Texture" id=8]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_3.png" type="Texture" id=9]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_4.png" type="Texture" id=10]
+[ext_resource path="res://Assets-TG/personaje_principal/Free 2D Animated Vector Game Character Sprites/Full body animated characters/Enemies/Enemy 3/fly_1.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -164,7 +166,20 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 10 ) ]
 }
 
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.04
+} ]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 115.0
+height = 0.0
+
 [node name="Boss" type="Area2D" groups=["boss"]]
+gravity_point = true
 script = ExtResource( 3 )
 
 [node name="Sprites" type="Node2D" parent="."]
@@ -177,12 +192,7 @@ flip_v = true
 hframes = 6
 
 [node name="bullets_out" type="Position2D" parent="Sprites/Sprite"]
-position = Vector2( 32, -19 )
-
-[node name="collider" type="CollisionShape2D" parent="."]
-position = Vector2( 128, -12 )
-rotation = 1.57079
-shape = SubResource( 1 )
+position = Vector2( -35, 72 )
 
 [node name="exp" type="Sprite" parent="."]
 visible = false
@@ -205,17 +215,37 @@ autostart = true
 stream = ExtResource( 5 )
 volume_db = -13.293
 
-[node name="Position2D" type="Position2D" parent="."]
-
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( 31.6623, -18.9342 )
 enabled = true
-cast_to = Vector2( 1920, 0 )
+cast_to = Vector2( 1890.34, 18.9342 )
+
+[node name="Line2D" type="Line2D" parent="RayCast2D"]
+visible = false
+points = PoolVector2Array( 1.3377, -4.0658, 1865.34, -4.0658 )
 
 [node name="Sprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 16, -11 )
 scale = Vector2( 0.87, 0.92525 )
 texture = ExtResource( 4 )
+region_rect = Rect2( 550.347, 407.136, 2.86395, 7.15985 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3, -195 )
+scale = Vector2( 0.513672, 0.513672 )
+frames = SubResource( 5 )
+frame = 3
+playing = true
+flip_h = true
+
+[node name="collider" type="CollisionShape2D" parent="."]
+position = Vector2( -3, 4 )
+rotation = 1.57079
+shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -7, 3 )
 
 [connection signal="area_entered" from="." to="." method="_on_enemy_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_enemy_body_entered"]

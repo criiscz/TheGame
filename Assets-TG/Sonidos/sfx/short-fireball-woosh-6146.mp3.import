@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/short-fireball-woosh-6146.mp3-6780725579149a281511f5812fd2c7d5.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/short-fireball-woosh-6146.mp3"
+dest_files=[ "res://.import/short-fireball-woosh-6146.mp3-6780725579149a281511f5812fd2c7d5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

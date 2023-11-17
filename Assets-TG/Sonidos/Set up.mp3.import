@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Set up.mp3-1607cb3314f71253e2b6ec9ee29e0248.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/Set up.mp3"
+dest_files=[ "res://.import/Set up.mp3-1607cb3314f71253e2b6ec9ee29e0248.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

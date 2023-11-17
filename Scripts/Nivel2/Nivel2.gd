@@ -10,9 +10,9 @@ var hight_min = 600
 var amount_powerUp = 2
 # Probabilidad de que cada powerUp aparezca
 var _powerups = {
-	"heart": {"Probability":0.15, "Range": [0, 0.15]},
-	"shot_triple": {"Probability":0.30, "Range": [0.15, 0.45]},
-	"shot_doble": {"Probability": 0.55, "Range": [0.45, 1]}}
+	"heart": {"Probability":0.20, "Range": [0, 0.20]},
+	"shot_triple": {"Probability":0.35, "Range": [0.20, 0.55]},
+	"shot_doble": {"Probability": 0.45, "Range": [0.55, 1]}}
 	
 func _ready():
 	randomize()

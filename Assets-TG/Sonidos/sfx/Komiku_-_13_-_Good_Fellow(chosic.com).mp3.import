@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Komiku_-_13_-_Good_Fellow(chosic.com).mp3-e2cf5d9b4735e1274d9cd4d560413a9f.mp3str"
+
+[deps]
+
+source_file="res://Assets-TG/Sonidos/sfx/Komiku_-_13_-_Good_Fellow(chosic.com).mp3"
+dest_files=[ "res://.import/Komiku_-_13_-_Good_Fellow(chosic.com).mp3-e2cf5d9b4735e1274d9cd4d560413a9f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
